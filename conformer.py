@@ -385,8 +385,8 @@ class ExP():
                 print('Epoch:', e,
                       '  Train loss: %.4f' % loss.detach().cpu().numpy(),
                       '  Test loss: %.4f' % loss_test.detach().cpu().numpy(),
-                      '  Train accuracy %.4f' % train_acc,
-                      '  Test accuracy is %.4f' % acc)
+                      '  Train accuracy: %.4f' % train_acc,
+                      '  Test accuracy: %.4f' % acc)
 
                 self.log_write.write(str(e) + "    " + str(acc) + "\n")
                 num = num + 1
